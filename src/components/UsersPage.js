@@ -16,7 +16,6 @@ function UserInput() {
     function submit() {
         setUsernames([...usernames, input])
 
-
         setInput('')
     }
 
