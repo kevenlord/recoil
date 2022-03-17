@@ -1,12 +1,12 @@
 import React from "react";
 import { RecoilRoot } from "recoil"
 
-import CharacterCounter from "./components/CharacterCounter";
+import Routess from "./routes";
 
 function App() {
   return (
     <RecoilRoot>
-      <CharacterCounter/>
+      <Routess/>
     </RecoilRoot>
   );
 }
