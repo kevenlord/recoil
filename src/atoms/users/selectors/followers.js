@@ -6,7 +6,7 @@ import api from "../../../services/api";
 
 export const userToFollowerMap = selector({
     key: 'userToFollowerMap',
-    get: async ({get}) =>{
+    get: async ({ get }) => {
         const _usernamesList = get(usernamesList);
 
         const responses = await Promise.all(
@@ -19,6 +19,10 @@ export const userToFollowerMap = selector({
             const { data: user } = response;
 
             followerMap[user.login] = user.followers
+
+
+
         })
+        console.log(JSON.stringify(followerMap))
     }
 })
