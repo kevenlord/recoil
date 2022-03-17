@@ -15,13 +15,11 @@ export const userToFollowerMap = selector({
 
         const followerMap = {}
 
-        
+
         responses.forEach(response => {
             const { data: user } = response;
             followerMap[user.login] = user.followers
-
-            return followerMap
         })
-
+        return followerMap
     }
 })
