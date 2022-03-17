@@ -20,7 +20,6 @@ function UserInput() {
         setInput('')
     }
 
-
     return (
         <div>
             <input type="text" value={input} onChange={onChange} />

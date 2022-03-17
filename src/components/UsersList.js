@@ -5,17 +5,15 @@ import { usernamesList } from "../atoms/users";
 import { userToFollowerMap } from "../atoms/users/selectors/followers"
 
 export default function UserList() {
-    const usernames = useRecoilValue(usernamesList) 
+    const usernames = useRecoilValue(usernamesList)
     const followerMap = useRecoilValue(userToFollowerMap)
 
-    function getFollowers(username){
+    function getFollowers(username) {
         return followerMap[username]
     }
-    console.log(usernames)
-    console.log(followerMap)
     return (
         <ul>
-            {usernames.map(username =>(
+            {usernames.map(username => (
                 <li key={username}>
                     Usuário: {username}, possui {getFollowers(username)} seguidores!
                 </li>

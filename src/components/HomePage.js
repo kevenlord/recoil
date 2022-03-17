@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function HomePage(){
-    return(
+export default function HomePage() {
+    return (
         <div>
             <h1>Home Page</h1>
 
             <Link to="/users">Go to users page</Link>
-            
+
         </div>
     )
 }
